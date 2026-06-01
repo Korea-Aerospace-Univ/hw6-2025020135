@@ -3,8 +3,6 @@
 int main(void) {
     char arr[10];
 
-    getchar(); 
-
     for (int i = 0; i < 10; i++) {
         scanf("%c", &arr[i]); 
     }
