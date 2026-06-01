@@ -3,11 +3,11 @@
 int main(void) {
     char arr[10];
 
-    for (int i = 0; i < 10; i++) {
-        scanf("%c", &arr[i]); 
-    }
+    for (char *p = arr; p < arr + 10; p++) {
+    scanf("%c", p);
+    } 
 
-    char max_char = arr[0];
+    char max_char = '\0';
     int max_count = 0;
 
     for (char *p = arr; p < arr + 10; p++) {
